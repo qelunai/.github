@@ -1,0 +1,31 @@
+name: Sai ngày âm / tiết khí · Wrong date
+description: Ngày âm, tháng nhuận, tiết khí, lễ tết hoặc giờ hoàng đạo bị sai · A lunar date, leap month, solar term, festival or hour looks wrong
+labels: ["data", "wrong-date"]
+body:
+  - type: input
+    id: solar
+    attributes:
+      label: Ngày dương · Solar date
+      placeholder: 2027-02-06
+    validations:
+      required: true
+  - type: textarea
+    id: shown
+    attributes:
+      label: Đang hiển thị · What is shown
+      description: Ứng dụng, trang web hoặc thư viện nào, và giá trị hiện ra · Which app, page or library, and the value it gives
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Giá trị đúng theo bạn · What you expect
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: Nguồn · Source
+      description: Lịch in, thông báo chính thức, sách (kèm trang), liên kết · Printed calendar, official notice, book with page, link
+    validations:
+      required: true

@@ -1,0 +1,38 @@
+name: Góp ý phong tục, thuật ngữ · Customs or term correction
+description: Sửa tên gọi, bản dịch hoặc mô tả một phong tục · Fix a name, a translation or the description of a custom
+labels: ["content"]
+body:
+  - type: input
+    id: term
+    attributes:
+      label: Thuật ngữ / phong tục · Term or custom
+      placeholder: Xông đất
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Loại góp ý · Kind
+      options:
+        - Tiếng Việt / Vietnamese
+        - English
+        - 中文
+        - 한국어
+        - Mô tả phong tục / Description
+    validations:
+      required: true
+  - type: textarea
+    id: fix
+    attributes:
+      label: Nội dung đề xuất · Suggested text
+    validations:
+      required: true
+  - type: input
+    id: region
+    attributes:
+      label: Miền (nếu khác nhau) · Region, if it differs
+      placeholder: Bắc / Trung / Nam
+  - type: textarea
+    id: source
+    attributes:
+      label: Nguồn · Source
